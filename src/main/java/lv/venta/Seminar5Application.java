@@ -29,6 +29,9 @@ public class Seminar5Application {
 				productRepo.save(p2);
 				productRepo.save(p3);
 				
+				System.out.println("Count of products: " + productRepo.count());
+				System.out.println("All products: " + productRepo.findAll());
+				System.out.println("Find by id: " + productRepo.findById(2).get());
 			}
 		};
 	}
